@@ -2,10 +2,13 @@
 const update = function(data) {
 console.log(data);
   for(let i = 0; i < data.length; i++) {
-    const div = document.createElement('div');
-    div.innerHTML = "<p class='channel'>" + data[i].display_name+ "<p>";
-    console.log(data[i].display_name);
-    document.getElementById("tvs").append(div);
+    if (!data[i].error ){
+      const div = document.createElement('div');
+      div.innerHTML = "<p class='channel'>" + data[i].display_name+ "<p>";
+      console.log(data[i].display_name);
+      document.getElementById("tvs").append(div);
+    }
+
   }
 
 }
