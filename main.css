@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75%;
+  padding: 35px 0;
+  margin: auto;
+
+}
+
+#searcharea {
+  height: 100px;
+  background-color: #3d3d3d;
+  padding: 30px;
+}
+
+input {
+  height: 40px;
+  padding: 20px 10px;
+  margin: auto;
+  display: block;
+  width: 75%;
+  border-radius: 48rem;
+  text-align: center;
+  border-style: hidden;
+}
+
+.controlls {
+  width: 80%;
+  height: 50px;
+  margin: 5px auto;
+}
+
+.btn {
+  width: 30%;
+  height: 40px;
+  margin: 5px 1.33%;
+  padding: 12px 0;
+  float: left;
+  text-align: center;
+  border-radius: 48rem;
+  background-color: #eee;
+}
+
+.channel {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #eee;
+}
