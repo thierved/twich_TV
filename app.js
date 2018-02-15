@@ -5,10 +5,16 @@ let output = '';
 for(i of channels) {
   $.getJSON('https://wind-bow.glitch.me/twitch-api/channels/'+i+'?callback=?', function(data) {
       output += '<li>';
-      output += '<p>'+ data.name + '</p>' ;
+      output += '<img src='+data.logo+'></img>';
+      output += '<a href='+data.url+'>'+ data.name + '</a>';
+      if (data.status !== null) {
+        output += '<p>'+ data.status+ '</p/>'
+      } else {
+        output += '<p>currently offline!</p/>'
+      }
+
       output += '</li>';
-      console.log(data.status);
-      console.log(output);
+      console.log(data);
       $('#channel').html(output);
     });
 };

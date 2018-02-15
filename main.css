@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #311B92;
+}
+
 .container {
   width: 75%;
   padding: 35px 0;
@@ -38,7 +42,7 @@
   margin: auto;
   padding: 5px 0;
   text-align: center;
-  background-color: #eee;
+  background-color: #6A1B9A;
 }
 
 #tvs ul {
@@ -49,14 +53,16 @@
 }
 
 #tvs ul li {
-  background-color: #fff;
+  background-color: #607D8B;
   height: 100px;
   width: 100%;
   margin: 8px auto;
   padding: 10px;
+  border-radius: 48rem;
 }
 
 img {
   float: left;
   width: 80px;
+  border-radius: 48rem;
 }
