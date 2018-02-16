@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 95%;
   padding: 35px 0;
   margin: auto;
 
@@ -61,8 +61,20 @@ body {
   border-radius: 48rem;
 }
 
-img {
+.placeholder {
+  width: 10%;
   float: left;
-  width: 80px;
+}
+.info {
+  float: right;
+  width: 80%;
+}
+
+img {
+  max-width: 80px;
   border-radius: 48rem;
+}
+
+.status {
+
 }
