@@ -12,6 +12,7 @@ body {
   padding: 35px 0;
   margin: auto;
   background-color: rgba(33, 5, 49, 0.88);
+  color: rgb(191, 191, 191)
 }
 
 #searcharea {
@@ -21,7 +22,7 @@ body {
 }
 
 .controlls {
-  width: 80%;
+  width: 70%;
   height: 50px;
   margin: 5px auto;
 }
@@ -30,11 +31,12 @@ body {
   width: 30%;
   height: 40px;
   margin: 5px 1.33%;
-  padding: 12px 0;
+  padding: 8px 0;
   float: left;
   text-align: center;
   border-radius: 48rem;
-  background-color: #eee;
+  background-color: rgba(58, 89, 90, 0.77);
+  border: 3px solid rgba(238, 238, 238, 0.17);
 }
 
 #tvs {
@@ -68,18 +70,19 @@ body {
   padding: 5px 0;
   text-decoration: none;
   text-transform: uppercase;
-  color: #d7d7d7
+  color: rgb(191, 191, 191)
 }
 
 .live {
   position: absolute;
   width: 80px;
-  height: 23px;
+  height: 29px;
   right: -20px;
   top: -10px;
   padding: 3px;
   background-color: rgba(27, 154, 44, 0.94);
   border-radius: 48rem;
+  border: 3px solid rgba(238, 238, 238, 0.24);
 }
 
 .placeholder {
@@ -97,8 +100,4 @@ body {
 img {
   max-width: 80px;
   border-radius: 1rem;
-}
-
-.status {
-
 }
