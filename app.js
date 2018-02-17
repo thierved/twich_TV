@@ -4,16 +4,23 @@ const channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbec
 let output = '';
 for(i of channels) {
   $.getJSON('https://wind-bow.glitch.me/twitch-api/channels/'+i+'?callback=?', function(data) {
-      output += '<li><span class="live">live</span>';
-      output += '<div class=placeholder><img src='+data.logo+'></img></div>';
-      output += '<div class="info"><a href='+data.url+'>'+ data.name + '</a>';
-      if (data.status !== null) {
-        output += '<p class="status">'+ data.status+ '</p/>'
-      } else {
-        output += '<p class="status">currently offline!</p/></div>'
-      }
-      output += '</li>';
-      console.log(data);
-      $('#channel').html(output);
+    showChannels(data);
     });
 };
+
+function showChannels(jsonData, opt="all") {
+  if (opt === "all") {
+    output += '<li><span class="live">live</span>';
+    output += '<div class=placeholder><img src='+jsonData.logo+'></img></div>';
+    output += '<div class="info"><a href='+jsonData.url+'>'+ jsonData.name + '</a>';
+    if (jsonData.status !== null) {
+      output += '<p class="status">'+ jsonData.status+ '</p/>'
+    } else {
+      output += '<p class="status">currently offline!</p/></div>'
+    }
+    output += '</li>';
+    console.log(jsonData);
+    $('#channel').html(output);
+  }
+
+}
