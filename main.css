@@ -72,9 +72,11 @@ h2, h3, p {
   display: inline-block;
   width: 100%;
   padding: 5px 0;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(191, 191, 191);
+  color: rgba(140, 180, 193, 0.9);
 }
 
 .live {
@@ -95,10 +97,17 @@ h2, h3, p {
 }
 .info {
   float: right;
-  width: 80%;
+  width: 75%;
   text-align: left;
   color: #eee;
   font-style: italic;
+
+}
+
+.info p {
+  margin: 0;
+padding-top: 10px;
+  border-top: 1px solid rgba(238, 238, 238, 0.24);
 }
 
 img {
