@@ -18,36 +18,11 @@ h2, h3, p {
 }
 
 .container {
-  width: 95%;
+  max-width: 650px;
   padding: 35px 0;
   margin: auto;
   background-color: rgba(33, 5, 49, 0.88);
   color: rgb(191, 191, 191)
-}
-
-#searcharea {
-  width: 88%;
-  height: 100px;
-  margin: auto;
-  background-color: rgba(125, 125, 125, 0.21);
-}
-
-#searcharea h3 {
-  text-align: center;
-  padding: 10px 0;
-  margin: 0;
-}
-
-input {
-  display: block;
-  width: 50%;
-  height: 30px;
-  margin: auto;
-  text-align: center;
-  border-radius: 48rem;
-  background-color: rgba(32, 6, 45, 0.58);
-  border: 3px solid rgba(238, 238, 238, 0.17);
-  color: rgba(32, 6, 45, 0.58);
 }
 
 .controlls {
