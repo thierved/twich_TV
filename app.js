@@ -11,26 +11,35 @@ for(i of channels) {
       viewChannels(data);
     });
 };
-  let li;
+
+  
 online.on('click', function() {
-  li = $('li').children().find('.offline').parent().parent().remove();
+  $('li.off').hide();
+  $('li.on').show();
 });
 
-allBtn.on('click', function() {
-  if (li) {
-    li.appendTo($('#channel'));
-  }
+offline.on('click', function() {
+  $('li.on').hide();
+  $('li.off').show();
 });
+
+
+allBtn.on('click', function() {
+  $('li').show();
+});
+
 
 
 function viewChannels(jsonData) {
-  output += '<li><span class="live">live</span>';
+  let status = jsonData.status === null ? "off" : "on" ;
+  let live = jsonData.status === null ? "offline" : "live" ;
+  output += '<li class='+ status +'><span class="isLive '+live+'">'+live+'</span>';
   output += '<div class=placeholder><img src='+jsonData.logo+'></img></div>';
   output += '<div class="info"><a href='+jsonData.url+'>'+ jsonData.name + '</a>';
   if (jsonData.status !== null) {
     output += '<p class="status">'+ jsonData.status+ '</p/>'
   } else {
-    output += '<p class="status offline">currently offline!</p/></div>'
+    output += '<p>currently offline!</p/></div>'     
   }
   output += '</li>';
   $('#channel').html(output);
