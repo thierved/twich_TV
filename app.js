@@ -29,7 +29,6 @@ allBtn.on('click', function() {
 });
 
 
-
 function viewChannels(jsonData) {
   let status = jsonData.status === null ? "off" : "on" ;
   let live = jsonData.status === null ? "offline" : "live" ;

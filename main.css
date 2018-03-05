@@ -25,8 +25,53 @@ h2, h3, p {
   color: rgb(191, 191, 191)
 }
 
-.controlls {
+label {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  width: 69%;
+  margin: 0 1% 0 0;
+  padding: 0 15px;
+  float: left;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.search {
   width: 70%;
+  height: 50px;
+  margin: auto;
+}
+
+#search-btn {
+  width: 30%;
+  float: right;  
+  margin: 0;
+  padding: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#search-btn, input {
+  height: 30px;
+  border: none;
+}
+
+#searcharea {
+  width: 90%;
+  margin: auto;
+  height: 100px;
+}
+
+.controlls {
+  width: 60%;
   height: 50px;
   margin: 5px auto;
 }
