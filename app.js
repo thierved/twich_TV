@@ -28,6 +28,18 @@ allBtn.on('click', function() {
   $('li').show();
 });
 
+$('#search').keyup(function(){
+  let textSearch = $('#search').val();
+  let expr = new RegExp(textSearch, 'i');
+
+  for (const li of $('li')) {
+    $(li).hide()
+    console.log()
+    if ($(li).children('.info').children('a').text().search(expr) !== -1) {
+      $(li).show()
+    }
+  }
+});
 
 function viewChannels(jsonData) {
   let status = jsonData.status === null ? "off" : "on" ;
