@@ -9,12 +9,19 @@ body {
 
 h2, h3, p {
   color: rgba(250, 249, 250, 0.77);
-  font-family: 'Kavivanar', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+label, span {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
 #title {
+  font-size: 1.8rem;
   text-align: center;
+  font-family: 'Quintessential', cursive;
+  color: rgba(119, 75, 150, 0.71);
 }
 
 .container {
@@ -22,7 +29,7 @@ h2, h3, p {
   padding: 35px 0;
   margin: auto;
   background-color: rgba(33, 5, 49, 0.88);
-  color: rgb(191, 191, 191)
+  color: rgba(232, 232, 232, 0.9);
 }
 
 label {
@@ -36,12 +43,17 @@ label, input {
 }
 
 input {
-  width: 69%;
-  margin: 0 1% 0 0;
-  padding: 0 15px;
-  float: left;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 10px 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: rgba(199, 199, 199, 0.83);
+  text-align: center;
+  background-color: rgba(48, 21, 82, 0.74);
+  border: 3px solid rgba(238, 238, 238, 0.24);
+  border-radius: 48rem;
 }
 
 .search {
@@ -52,7 +64,7 @@ input {
 
 #searcharea {
   width: 90%;
-  margin: auto;
+  margin: 1.5rem auto;
   height: 100px;
 }
 
@@ -68,6 +80,7 @@ input {
   margin: 5px 1.33%;
   padding: 8px 0;
   float: left;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   border-radius: 48rem;
   background-color: rgba(58, 89, 90, 0.77);
@@ -94,7 +107,7 @@ input {
 
 #tvs ul li {
   position: relative;
-  background-color: rgba(105, 96, 139, 0.28);
+  background-color: rgba(11, 7, 29, 0.28);
   height: 110px;
   width: 100%;
   margin: 20px auto;
@@ -108,7 +121,7 @@ input {
   width: 100%;
   padding: 5px 0;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(140, 180, 193, 0.9);
@@ -143,13 +156,11 @@ input {
   width: 75%;
   text-align: left;
   color: #eee;
-  font-style: italic;
-
 }
 
 .info p {
   margin: 0;
-padding-top: 10px;
+  padding-top: 10px;
   border-top: 1px solid rgba(238, 238, 238, 0.24);
 }
 
