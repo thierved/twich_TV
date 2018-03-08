@@ -21,7 +21,7 @@ label, span {
   font-size: 1.8rem;
   text-align: center;
   font-family: 'Quintessential', cursive;
-  color: rgba(119, 75, 150, 0.71);
+  color: rgba(177, 143, 202, 0.71);
 }
 
 .container {
@@ -85,17 +85,19 @@ input {
   border-radius: 48rem;
   background-color: rgba(58, 89, 90, 0.77);
   border: 3px solid rgba(238, 238, 238, 0.17);
+  transition: 0.5s;
 }
 
 .btn:hover {
   cursor: pointer;
+  background-color: rgba(58, 89, 90, 0.247);
 }
 
 #tvs {
   width: 100%;
   margin: auto;
   padding: 10px;
-  text-align: center;
+  text-align: center;  
 }
 
 #tvs ul {
@@ -114,6 +116,12 @@ input {
   padding: 10px;
   border-radius: 1rem;
   border: 3px solid rgba(238, 238, 238, 0.17);
+  transition: 0.2s ease-out;
+  animation: slide_down 0.5s;
+}
+
+#tvs ul li:hover {
+  transform: scale(1.088);
 }
 
 #tvs ul li a {
@@ -169,3 +177,13 @@ img {
   border-radius: 1rem;
 }
 
+/********************* ANIMATIONS ********************/
+
+@keyframes slide_down {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
